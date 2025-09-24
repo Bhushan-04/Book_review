@@ -2,8 +2,6 @@
 
 A RESTful API for managing books and reviews, built with **Node.js**, **Express**, **Sequelize**, and **PostgreSQL**. Includes JWT-based authentication and full CRUD functionality for books and reviews.
 
----
-
 ## Features
 
 - **User Authentication** (JWT)
@@ -19,8 +17,6 @@ A RESTful API for managing books and reviews, built with **Node.js**, **Express*
   - Update own review: `PUT /reviews/:id`
   - Delete own review: `DELETE /reviews/:id`
 
----
-
 ## Tech Stack
 
 - Node.js
@@ -30,8 +26,6 @@ A RESTful API for managing books and reviews, built with **Node.js**, **Express*
 - JWT for authentication
 - bcrypt for password hashing
 - dotenv for environment variables
-
----
 
 ## Setup Instructions
 
@@ -85,7 +79,6 @@ node app.js
 
 Server should run on `http://localhost:3000`.
 
----
 
 ## API Endpoints
 
@@ -163,7 +156,6 @@ GET /books/1?page=1&limit=5
 GET /books/search?query=deshpande&page=1&limit=5
 ```
 
----
 
 ### Reviews
 
@@ -207,10 +199,10 @@ Authorization required
 - routes also can be nested inside folder according to industry practice
 
 ## Diagram which has 1:N relation
-![Diagram](public/Screenshot (104).png)
+![Diagram](/public/er.png)
 
 ## Postman
-![Screenshot](public/Screenshot (103).png)
+![Screenshot](/public/postman.png)
 
 
 
