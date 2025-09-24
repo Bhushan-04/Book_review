@@ -32,7 +32,7 @@ A RESTful API for managing books and reviews, built with **Node.js**, **Express*
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Bhushan-04/Book_review.git
 cd Book_Review
 ```
 
@@ -63,7 +63,7 @@ JWT_EXPIRES_IN=1d
 CREATE DATABASE mydb;
 ```
 
-3. Run Sequelize migrations to create tables:
+3. Run Sequelize migrations to create tables if want to create migrations or else sync
 
 ```bash
 npx sequelize-cli db:migrate
@@ -71,10 +71,10 @@ npx sequelize-cli db:migrate
 
 Tables created: `Users`, `Books`, `Reviews`.
 
-### 5. Start the server
+### 5. Start the server before that add "dev": "nodemon app.js" in package.json
 
 ```bash
-node app.js
+npm run dev
 ```
 
 Server should run on `http://localhost:3000`.
