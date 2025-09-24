@@ -3,7 +3,8 @@ const router = express.Router();
 const { addReview, updateReview, deleteReview } = require('../controllers/Reviewcontroller/reviewController');
 const authenticate = require('../middleware/authMiddleware');
 
-// Add review to a book
+//all are protected routes
+// Add review to a book  
 router.post('/books/:id/reviews', authenticate, addReview);
 
 // Update review
